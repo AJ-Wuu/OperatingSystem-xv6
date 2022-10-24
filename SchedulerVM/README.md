@@ -35,7 +35,7 @@ scheduler(void)
 ```
 
 # xv6 - Virtual Memory
-## Null Pointer Dereference
+## Null-Pointer Dereference
 Null-pointer dereference can be done with using 0x1000 explicitly and changing a few places in exec.c, vm.c and Makefile.  
 ## Read-Only Permission Update
 Read-only code needs to work with PTE_W.  
