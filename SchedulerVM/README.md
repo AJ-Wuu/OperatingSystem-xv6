@@ -1,4 +1,4 @@
-# xv6 - Scheduling
+# xv6 - Scheduler
 ## Round Robin (in `proc.c`)
 ```
 void
@@ -33,3 +33,10 @@ scheduler(void)
     release(&ptable.lock);
 }
 ```
+
+# xv6 - Virtual Memory
+## Null Pointer Dereference
+Null-pointer dereference can be done with using 0x1000 explicitly and changing a few places in exec.c, vm.c and Makefile.  
+## Read-Only Permission Update
+Read-only code needs to work with PTE_W.  
+To inherit it in fork(), we need to refer to copyuvm(). And it actually does the job by default.  
